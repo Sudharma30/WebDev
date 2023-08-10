@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <center>
+  <div class="white">
+    <div class="form-main">
+  <b id="heading">Job Application</b>
+  <b id="web">(Web)</b>
+  <form action="/submit" method="post">
+    <table>
+      <tr>
+        <td>
+          <div class="form-group">
+            <label for="first-name">First name</label>
+            <input type="text" name="first-name" id="first-name" placeholder="Enter First Name..." required>
+          </div>
+        </td>
+        <td>
+          <div class="form-group">
+            <label for="last-name">Last name</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Enter Last Name..." required>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Enter Email..." required>
+          </div>
+        </td>
+        <td>
+          <div class="form-group">
+            <label for="jobs">Job Role</label>
+
+            <select name="jobs" id="jobs" value="Select" placeholder="Select Job Role">
+              <option value="">Select Job Role</option>
+            </select>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div class="form-group">
+            <label for="address">Address</label>
+            <textarea name="address" id="address" placeholder="Enter Address" rows="" cols="50" required></textarea>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" placeholder="Enter City Name..." required>
+          </div>
+        </td>
+        <td>
+          <div class="form-group">
+            <label for="pincode">Pincode</label>
+            <input type="text" name="pincode" id="pincode" placeholder="Enter pincode..." required>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" required>
+          </div>
+        </td>
+        <td>
+          <div class="form-group">
+            <label for="upload">Upload Your CV</label>
+            <input type="file" id="upload" name="upload">
+          </div>
+        </td>
+      </tr>
+      <tr align="right">
+        <td></td>
+        <td>
+          <div class="form-group">
+            <input type="submit" value="Apply Now">
+          </div>
+        </td>
+      </tr>
+    </table>
+
+  </form>
+</div>
+</div>
+</center>
+</body>
+
+</html>
